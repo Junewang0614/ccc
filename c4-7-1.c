@@ -1,12 +1,12 @@
 #include <stdio.h>
 int main(void){
-	int x,i;
+	int x,a;
 	printf("请输入一个整数：");scanf("%d",&x);
+        
+	a=2;
+	while (a<x){
+		printf("%d ",a);
+		a=a*2;}
 
-	i=0;
-	while (i<x)
-		printf("%d ",i+=2);
-	printf("\n");
-	
 	return 0;
 }
