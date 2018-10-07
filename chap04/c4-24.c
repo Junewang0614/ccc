@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(void){
+	int i,j,x;
+	puts("让我们来画一个金字塔");
+	printf("x:");scanf("%d",&x);
+
+	
+
+	for (i=1;i<=x;i++){
+		for (j=1;j<=x-i;j++)
+			printf(" ");
+		for (j=1;j<=2*i-1;j++)
+			printf("*");
+		for (j=1;j<=x-i;j++)
+			printf(" ");
+		putchar('\n');
+	}
+
+
+        return 0;
+}
+
