@@ -12,10 +12,12 @@ int lcm(int a,int b)
 	if (r == 0)
 		temp = max;
 	else
-		while (r != 0 ){
-		max = min;
-		min = r;
-		r = max % min;}	
+		while (r != 0 )
+		{
+			max = min;
+			min = r;
+			r = max % min;
+		}	
 		temp = a*b/min;
 	return temp;
 }
@@ -24,9 +26,9 @@ int main()
 {
 	int a,b;
        	do{
-        scanf("%d %d",&a,&b);
-        if (a <= 0 || b <= 0)
-                puts("请输入两个正整数。");
+    	   	 scanf("%d %d",&a,&b);
+       		 if (a <= 0 || b <= 0)
+        	        puts("请输入两个正整数。");
         }while( a<=0 || b <= 0);
 
 	int lcmx;
